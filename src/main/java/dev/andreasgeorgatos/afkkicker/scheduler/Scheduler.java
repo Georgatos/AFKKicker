@@ -49,18 +49,22 @@ public class Scheduler extends BukkitRunnable {
 
         for (Player player : Bukkit.getOnlinePlayers()) {
             if (afkPlayers.isPlayerAFK(player.getUniqueId())) {
-                player.kick(messenger.getKickMessage());
+                kickPlayer(player);
             } else {
                 if (playerDataManager.hasReachedTheLimit(player.getUniqueId(), config)) {
-                    player.kick(messenger.getKickMessage());
-                    playerDataManager.removePlayerData(player.getUniqueId());
-                    afkPlayers.removePlayer(player.getUniqueId());
-                    logger.info("Players have been kicked from the server.");
+                    kickPlayer(player);
                 } else {
                     playerDataManager.addPlayerData(player.getUniqueId(), player.getLocation());
                 }
             }
         }
+    }
+
+    private void kickPlayer(Player player) {
+        playerDataManager.removePlayerData(player.getUniqueId());
+        afkPlayers.removePlayer(player.getUniqueId());
+        logger.info("Player: " + player.getName() + " has been kicked from the server.");
+        player.kick(messenger.getKickMessage());
     }
 
     //    We are not using the ternary operator for readability, the following code can  be replaced with
