@@ -1,5 +1,5 @@
 name: AFKKicker
-main: dev.andreasgeorgatos.afkkicker
+main: dev.andreasgeorgatos.afkkicker.AFKKicker
 version: 1.0
 description: Kick afk people when the TPS is below a certain number between X and Y time.
 api-version: 1.20

@@ -1,18 +1,18 @@
 {
   "onlyPlayers": {
-    "chatColor": "FF5733",
+    "chatColor": "#FF5733",
     "text": "Only players can run this command!"
   },
   "noLongerAFK": {
-    "chatColor": "FF5733",
+    "chatColor": "#FF5733",
     "text": "You are no longer AFK!"
   },
   "nowAFK": {
-    "chatColor": "FF5733",
+    "chatColor": "#FF5733",
     "text": "You are currently being AFK!"
   },
   "kickMessage": {
-    "chatColor": "FF5733",
+    "chatColor": "#FF5733",
     "text": "You have been kicked from the server for being AFK during a period of low TPS!"
   }
 }

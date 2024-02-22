@@ -1,19 +1,23 @@
 plugins {
     id("java")
+    id("com.github.johnrengelman.shadow") version "7.1.0"
+}
+tasks.shadowJar {
+    archiveClassifier.set("")
 }
 
 group = "dev.andreasgeorgatos.afkkicker"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 
 repositories {
-    mavenCentral()
     maven("https://repo.papermc.io/repository/maven-public/")
+    mavenCentral()
 }
 
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
-    implementation("org.jetbrains:annotations:21.0.3")
+    implementation("org.jetbrains:annotations:24.0.0")
     implementation("net.kyori:adventure-api:4.16.0")
     implementation("org.slf4j:slf4j-api:2.0.12")
     implementation("com.google.code.gson:gson:2.8.8")

@@ -3,6 +3,7 @@ package dev.andreasgeorgatos.afkkicker;
 import dev.andreasgeorgatos.afkkicker.commands.AFKCommand;
 import dev.andreasgeorgatos.afkkicker.dataholder.AFKPlayers;
 import dev.andreasgeorgatos.afkkicker.dataholder.PlayerDataManager;
+import dev.andreasgeorgatos.afkkicker.events.OnPlayerMoveEvent;
 import dev.andreasgeorgatos.afkkicker.events.OnPlayerQuitEvent;
 import dev.andreasgeorgatos.afkkicker.files.FileManager;
 import dev.andreasgeorgatos.afkkicker.messages.Messenger;
@@ -24,6 +25,7 @@ public class AFKKicker extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        saveDefaultConfig();
         logger.info("The plugin AFK Kicker has been successfully loaded.");
         initialize();
         registerCommands();
@@ -41,11 +43,12 @@ public class AFKKicker extends JavaPlugin {
     }
 
     private void registerCommands() {
-        this.getCommand("afk").setExecutor(new AFKCommand(messenger, afkPlayers));
+        this.getCommand("afk").setExecutor(new AFKCommand(messenger, afkPlayers, playerDataManager));
     }
 
     private void registerEvents() {
         Bukkit.getPluginManager().registerEvents(new OnPlayerQuitEvent(afkPlayers, playerDataManager), this);
+        Bukkit.getPluginManager().registerEvents(new OnPlayerMoveEvent(afkPlayers, playerDataManager, messenger), this);
     }
 
     private void initialize() {
@@ -53,6 +56,6 @@ public class AFKKicker extends JavaPlugin {
         playerDataManager = new PlayerDataManager();
         fileManager = new FileManager(this.getDataFolder());
         messenger = new Messenger(fileManager);
-        bukkitTask = new Scheduler(afkPlayers, playerDataManager, messenger, this.getConfig()).runTaskTimer(this, 5 * 60, 5 * 60);
+        bukkitTask = new Scheduler(afkPlayers, playerDataManager, messenger, this.getConfig()).runTaskTimer(this, (60 * 20) * 5,(60 * 20) * 5);
     }
 }
