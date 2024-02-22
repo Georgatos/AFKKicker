@@ -4,31 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="effeb1ce-9199-4f1f-a79b-a5f519b9c73a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/AFKKicker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/commands/AFKCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/dataholder/AFKPlayers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/dataholder/PlayerData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/dataholder/PlayerDataManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/events/OnPlayerQuitEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/files/FileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/messages/Messenger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/scheduler/Scheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/notifications.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+    <list default="true" id="effeb1ce-9199-4f1f-a79b-a5f519b9c73a" name="Changes" comment="Before testing.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,6 +157,7 @@
     <attachedChunks>
       <set>
         <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-868cef46" />
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
         <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
       </set>
     </attachedChunks>
@@ -195,8 +174,17 @@
       <workItem from="1708456119589" duration="7329000" />
       <workItem from="1708498446805" duration="3325000" />
       <workItem from="1708509052664" duration="2837000" />
-      <workItem from="1708598694162" duration="161000" />
+      <workItem from="1708598694162" duration="1223000" />
     </task>
+    <task id="LOCAL-00001" summary="Before testing.">
+      <option name="closed" value="true" />
+      <created>1708599214013</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708599214013</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,5 +192,9 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="java:net.kyori:adventure-api" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Before testing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Before testing." />
   </component>
 </project>
