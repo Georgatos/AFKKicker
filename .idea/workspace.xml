@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="effeb1ce-9199-4f1f-a79b-a5f519b9c73a" name="Changes" comment="Fixed the bug with the time configuration, Fixed the bug where we weren't returning anything if the console run the command.">
+    <list default="true" id="effeb1ce-9199-4f1f-a79b-a5f519b9c73a" name="Changes" comment="Fixed the TextComponent bug and now removing some player data when the player toggles out of afk.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/events/OnPlayerMoveEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/AFKKicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/AFKKicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/commands/AFKCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/commands/AFKCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/messages/Messenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/messages/Messenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/notifications.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/notifications.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/dataholder/PlayerDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/dataholder/PlayerDataManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +217,7 @@
       <workItem from="1708498446805" duration="3325000" />
       <workItem from="1708509052664" duration="2837000" />
       <workItem from="1708598694162" duration="2412000" />
-      <workItem from="1708601460729" duration="2259000" />
+      <workItem from="1708601460729" duration="2466000" />
     </task>
     <task id="LOCAL-00001" summary="Before testing.">
       <option name="closed" value="true" />
@@ -244,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708602903648</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed the TextComponent bug and now removing some player data when the player toggles out of afk.">
+      <option name="closed" value="true" />
+      <created>1708603762920</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708603762920</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +264,7 @@
     <MESSAGE value="Before testing." />
     <MESSAGE value="Fixed the main in plugin.yml" />
     <MESSAGE value="Fixed the bug with the time configuration, Fixed the bug where we weren't returning anything if the console run the command." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the bug with the time configuration, Fixed the bug where we weren't returning anything if the console run the command." />
+    <MESSAGE value="Fixed the TextComponent bug and now removing some player data when the player toggles out of afk." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the TextComponent bug and now removing some player data when the player toggles out of afk." />
   </component>
 </project>

@@ -3,6 +3,7 @@ package dev.andreasgeorgatos.afkkicker;
 import dev.andreasgeorgatos.afkkicker.commands.AFKCommand;
 import dev.andreasgeorgatos.afkkicker.dataholder.AFKPlayers;
 import dev.andreasgeorgatos.afkkicker.dataholder.PlayerDataManager;
+import dev.andreasgeorgatos.afkkicker.events.OnPlayerMoveEvent;
 import dev.andreasgeorgatos.afkkicker.events.OnPlayerQuitEvent;
 import dev.andreasgeorgatos.afkkicker.files.FileManager;
 import dev.andreasgeorgatos.afkkicker.messages.Messenger;
@@ -47,6 +48,7 @@ public class AFKKicker extends JavaPlugin {
 
     private void registerEvents() {
         Bukkit.getPluginManager().registerEvents(new OnPlayerQuitEvent(afkPlayers, playerDataManager), this);
+        Bukkit.getPluginManager().registerEvents(new OnPlayerMoveEvent(afkPlayers, playerDataManager, messenger), this);
     }
 
     private void initialize() {

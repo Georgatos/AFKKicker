@@ -14,6 +14,10 @@ public class PlayerDataManager {
         playerDataMap = new HashMap<>();
     }
 
+    public boolean hasPlayerData(UUID uuid) {
+        return playerDataMap.containsKey(uuid);
+    }
+
     public boolean hasReachedTheLimit(UUID uuid, FileConfiguration config) {
         if (playerDataMap.containsKey(uuid)) {
             if (config.get("locationLimit") == null) {
