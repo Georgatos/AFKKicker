@@ -1,0 +1,14 @@
+name: AFKKicker
+main: dev.andreasgeorgatos.afkkicker
+version: 1.0
+description: Kick afk people when the TPS is below a certain number between X and Y time.
+api-version: 1.20
+website: andreasgeorgatos.dev
+author: georgatos
+
+commands:
+  afk:
+    description: Run this command to toggle afk on/off
+    usage: </afk>
+    permission: afkkicker.afkcommand
+    permission-message: "You don't have permission to run this command."
