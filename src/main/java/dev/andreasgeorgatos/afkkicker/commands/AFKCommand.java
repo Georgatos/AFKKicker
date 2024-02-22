@@ -24,6 +24,7 @@ public class AFKCommand implements CommandExecutor {
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command cmd, @NotNull String label, @NotNull String[] args) {
         if (!(sender instanceof Player)) {
             sender.sendMessage(messenger.getOnlyPlayersMessage());
+            return false;
         }
 
         UUID uuid = ((Player) sender).getUniqueId();
@@ -36,6 +37,6 @@ public class AFKCommand implements CommandExecutor {
             sender.sendMessage(messenger.getNowAFKMessage());
         }
 
-        return false;
+        return true;
     }
 }

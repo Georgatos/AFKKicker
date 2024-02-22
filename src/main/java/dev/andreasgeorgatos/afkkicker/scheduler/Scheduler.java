@@ -7,11 +7,15 @@ import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public class Scheduler extends BukkitRunnable {
+
+    private final Logger logger = LoggerFactory.getLogger(Scheduler.class);
 
     private final AFKPlayers afkPlayers;
     private final PlayerDataManager playerDataManager;
@@ -51,6 +55,7 @@ public class Scheduler extends BukkitRunnable {
                     player.kick(messenger.getKickMessage());
                     playerDataManager.removePlayerData(player.getUniqueId());
                     afkPlayers.removePlayer(player.getUniqueId());
+                    logger.info("Players have been kicked from the server.");
                 } else {
                     playerDataManager.addPlayerData(player.getUniqueId(), player.getLocation());
                 }
@@ -59,12 +64,12 @@ public class Scheduler extends BukkitRunnable {
     }
 
     //    We are not using the ternary operator for readability, the following code can  be replaced with
-//    return config.get(path) == null ? LocalTime.now() : LocalTime.parse(config.getString(path), DateTimeFormatter.ofPattern("HH:mm"));
+//    return config.get(path) == null ? LocalTime.now() : LocalTime.parse(config.getString(path), DateTimeFormatter.ofPattern("HHmm"));
     private LocalTime getHour(FileConfiguration config, String path) {
         if (config.get(path) == null) {
             return LocalTime.now();
         }
-        return LocalTime.parse(config.getString(path), DateTimeFormatter.ofPattern("HH:mm"));
+        return LocalTime.parse(config.getString(path), DateTimeFormatter.ofPattern("HHmm"));
     }
 
     private double getMinimumTps(FileConfiguration config) {

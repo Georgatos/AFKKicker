@@ -24,6 +24,7 @@ public class AFKKicker extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        saveDefaultConfig();
         logger.info("The plugin AFK Kicker has been successfully loaded.");
         initialize();
         registerCommands();
