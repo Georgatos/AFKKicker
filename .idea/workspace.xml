@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="effeb1ce-9199-4f1f-a79b-a5f519b9c73a" name="Changes" comment="Returned the time format to HH:mm and changed the type of starting and finishing hour in the config to String.">
+    <list default="true" id="effeb1ce-9199-4f1f-a79b-a5f519b9c73a" name="Changes" comment="Fixed a bug where if the player was being kicked when he used the command /afk, his data was still being held and cleaned a few lines.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/AFKKicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/AFKKicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/dataholder/PlayerDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/dataholder/PlayerDataManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/scheduler/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/scheduler/Scheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/events/OnPlayerMoveEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/events/OnPlayerMoveEvent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +216,7 @@
       <workItem from="1708498446805" duration="3325000" />
       <workItem from="1708509052664" duration="2837000" />
       <workItem from="1708598694162" duration="2412000" />
-      <workItem from="1708601460729" duration="6280000" />
+      <workItem from="1708601460729" duration="9789000" />
     </task>
     <task id="LOCAL-00001" summary="Before testing.">
       <option name="closed" value="true" />
@@ -268,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708604958825</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixed a bug where if the player was being kicked when he used the command /afk, his data was still being held and cleaned a few lines.">
+      <option name="closed" value="true" />
+      <created>1708608707147</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708608707147</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +290,7 @@
     <MESSAGE value="Fixed the TextComponent bug and now removing some player data when the player toggles out of afk." />
     <MESSAGE value="Added a move event to delete the data for afk and the location if the player moves." />
     <MESSAGE value="Returned the time format to HH:mm and changed the type of starting and finishing hour in the config to String." />
-    <option name="LAST_COMMIT_MESSAGE" value="Returned the time format to HH:mm and changed the type of starting and finishing hour in the config to String." />
+    <MESSAGE value="Fixed a bug where if the player was being kicked when he used the command /afk, his data was still being held and cleaned a few lines." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug where if the player was being kicked when he used the command /afk, his data was still being held and cleaned a few lines." />
   </component>
 </project>

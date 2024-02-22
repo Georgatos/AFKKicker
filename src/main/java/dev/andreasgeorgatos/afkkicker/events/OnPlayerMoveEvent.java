@@ -3,7 +3,6 @@ package dev.andreasgeorgatos.afkkicker.events;
 import dev.andreasgeorgatos.afkkicker.dataholder.AFKPlayers;
 import dev.andreasgeorgatos.afkkicker.dataholder.PlayerDataManager;
 import dev.andreasgeorgatos.afkkicker.messages.Messenger;
-import org.apache.logging.log4j.message.Message;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;

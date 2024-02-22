@@ -56,6 +56,6 @@ public class AFKKicker extends JavaPlugin {
         playerDataManager = new PlayerDataManager();
         fileManager = new FileManager(this.getDataFolder());
         messenger = new Messenger(fileManager);
-        bukkitTask = new Scheduler(afkPlayers, playerDataManager, messenger, this.getConfig()).runTaskTimer(this, 5 * 60, 5 * 60);
+        bukkitTask = new Scheduler(afkPlayers, playerDataManager, messenger, this.getConfig()).runTaskTimer(this, (60 * 20) * 5,(60 * 20) * 5);
     }
 }
