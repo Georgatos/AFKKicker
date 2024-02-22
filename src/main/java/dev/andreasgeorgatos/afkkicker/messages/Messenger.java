@@ -59,7 +59,6 @@ public class Messenger {
         }
 
         JsonObject onlyPlayers = jsonObject.getAsJsonObject("onlyPlayers");
-
         return getMessage(onlyPlayers);
     }
 
@@ -69,10 +68,10 @@ public class Messenger {
 
         if (onlyPlayers.has("text")) {
             if (onlyPlayers.has("text")) {
-                component.append(Component.text(onlyPlayers.get("text").getAsString()));
+                component = component.append(Component.text(onlyPlayers.get("text").getAsString()));
             }
             if (onlyPlayers.has("chatColor")) {
-                component.color(TextColor.fromCSSHexString(onlyPlayers.get("chatColor").getAsString()));
+                component = component.color(TextColor.fromCSSHexString(onlyPlayers.get("chatColor").getAsString()));
             }
         }
         return component;

@@ -42,7 +42,7 @@ public class AFKKicker extends JavaPlugin {
     }
 
     private void registerCommands() {
-        this.getCommand("afk").setExecutor(new AFKCommand(messenger, afkPlayers));
+        this.getCommand("afk").setExecutor(new AFKCommand(messenger, afkPlayers, playerDataManager));
     }
 
     private void registerEvents() {
