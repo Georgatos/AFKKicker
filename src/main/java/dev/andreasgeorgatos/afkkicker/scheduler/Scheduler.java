@@ -64,12 +64,12 @@ public class Scheduler extends BukkitRunnable {
     }
 
     //    We are not using the ternary operator for readability, the following code can  be replaced with
-//    return config.get(path) == null ? LocalTime.now() : LocalTime.parse(config.getString(path), DateTimeFormatter.ofPattern("HHmm"));
+//    return config.get(path) == null ? LocalTime.now() : LocalTime.parse(config.getString(path), DateTimeFormatter.ofPattern("HH:mm"));
     private LocalTime getHour(FileConfiguration config, String path) {
         if (config.get(path) == null) {
             return LocalTime.now();
         }
-        return LocalTime.parse(config.getString(path), DateTimeFormatter.ofPattern("HHmm"));
+        return LocalTime.parse(config.getString(path), DateTimeFormatter.ofPattern("HH:mm"));
     }
 
     private double getMinimumTps(FileConfiguration config) {

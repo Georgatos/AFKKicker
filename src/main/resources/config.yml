@@ -1,10 +1,7 @@
 #The hours must be in the format of HH:mm, it follows the server time, not the time in your PC
 #Make sure to do the proper calculations before setting them.
-startingHour: 17:00
-finishingHour: 20:00
-
-#The intervals are in minutes.
-interval: 10
+startingHour: "17:00"
+finishingHour: "20:00"
 
 #At how many tps we will start kicking players, if this field doesn't exist, the TPS will
 #be assumed to be at 17.0
