@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="effeb1ce-9199-4f1f-a79b-a5f519b9c73a" name="Changes" comment="Testing is done." />
+    <list default="true" id="effeb1ce-9199-4f1f-a79b-a5f519b9c73a" name="Changes" comment="Added the .jar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/AFKKicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/andreasgeorgatos/afkkicker/AFKKicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,6 +121,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\IdeaProjects\AFKKicker" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.AFKKicker [shadowJar]">
     <configuration name="AFKKicker [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -214,6 +223,8 @@
       <workItem from="1708598694162" duration="2412000" />
       <workItem from="1708601460729" duration="9789000" />
       <workItem from="1708615076633" duration="71000" />
+      <workItem from="1708615297318" duration="531000" />
+      <workItem from="1709031427666" duration="116000" />
     </task>
     <task id="LOCAL-00001" summary="Before testing.">
       <option name="closed" value="true" />
@@ -279,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708615101120</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added the .jar">
+      <option name="closed" value="true" />
+      <created>1708615317490</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708615317490</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +316,7 @@
     <MESSAGE value="Returned the time format to HH:mm and changed the type of starting and finishing hour in the config to String." />
     <MESSAGE value="Fixed a bug where if the player was being kicked when he used the command /afk, his data was still being held and cleaned a few lines." />
     <MESSAGE value="Testing is done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing is done." />
+    <MESSAGE value="Added the .jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the .jar" />
   </component>
 </project>

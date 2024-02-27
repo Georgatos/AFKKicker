@@ -6,3 +6,6 @@ locationLimit: 3
 #At how many tps we will start kicking players, if this field doesn't exist, the TPS will
 #be assumed to be at 17.0
 TPS: 17.0
+
+#The delay between checks, in minutes.
+delay: 15
